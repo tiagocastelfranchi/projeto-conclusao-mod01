@@ -1,0 +1,325 @@
+body {
+    font: 100%/1.5 arial, verdana, sans-serif;
+    /* background-image: url(imagens/royalty-free-background-image-17-920x518.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+}
+
+.site {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header, footer {
+    background-color: silver;
+    min-height: auto;
+}
+    header h1 {
+        font-size: 2em;
+        text-align: center;
+        line-height: 2;
+        color: black;
+        text-decoration: none;
+    }
+
+    header a {
+        color: inherit;
+        text-decoration: inherit;
+        display: inherit;
+    }
+.navegacao ul{
+    background-color: rgba(0, 0, 0, 0.493);
+}
+.navegacao ul li{
+    display: inline-block;
+    position: relative;
+    padding-left: 5px;
+
+}
+.navegacao ul li:hover{
+    border-bottom: 2px solid rgb(84, 139, 223);
+}
+
+/*Sub menu*/
+.navegacao ul ul{
+    display: none;
+    left: 0;
+    position: absolute;
+    width: 220px;
+}
+.navegacao ul li:hover ul{
+    display: block;
+}
+.navegacao ul ul li{
+    line-height: 0.5em;
+}    .menu {
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #logo {
+        display: block;
+        background-color: black;
+        background-image: url(imagens/logolol-t.jpg);
+        background-position-y:-10px;
+        background-position-x: 10px ;
+        background-repeat: no-repeat;
+        color: white;
+        font-weight: bold;
+        text-align: center;   
+    }
+    #logo a {
+        display: block;
+        margin-top: 6px;       
+    }
+        #logo:hover {
+            border-bottom: 2px solid rgb(84, 139, 223);
+
+        }
+    .menu__item:nth-last-child(2) {
+        display: none;
+    }
+    .menu__item:nth-last-child(3) {
+        display: none;
+    }
+    .menu__item:nth-last-child(4) {
+        display: none;
+    }
+    .menu__item:nth-last-child(5) {
+        display: none;
+    }
+    .menu__item:nth-last-child(6) {
+        display: none;
+    }
+    .menu__item:hover{
+        border-bottom: 2px solid rgb(84, 139, 223);
+    }
+    .menu__item {
+        font-size: 1em;
+        line-height: 2;
+        text-align: center;
+        background-color: black;
+        text-decoration: none;
+        color: white;
+        flex-grow: 1;
+        border-bottom: 2px solid;
+        border-color: black;
+    }
+    .subtitulo{
+        font-size: 2em;
+        font-weight: bold;
+    }
+        .menu__item a{
+            margin:auto;        
+            font-weight: bold;
+            
+        }
+h1.titulo {
+    font-family: 'Lora', serif;
+    font-size: 3em;
+    color: #F5D222;
+    text-shadow: 3px 3px 4px #747527b6;
+}
+        
+main {
+    min-height: 700px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+    main section {
+        background-color:#d2dbe4;
+        padding: 16px;
+    }
+
+    main aside {
+        background-color: white;
+        min-height: 70px;
+        background-image: url(imagens/logo-lets-h.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x: 50%;
+        background-position-y: 50%;
+        background-color: #273c54d2;
+
+    }
+
+span.anuncio {
+    display: inline-block;
+    color: black;
+    text-align: start;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;    
+}
+
+.site-footer{
+    color: rgb(206, 206, 206);
+    height: auto;
+    background-color: rgba(103, 103, 207, 0.966);    
+    padding: 32px;
+}
+    .social {
+        float: right;
+        padding-top: 10px;
+    }
+
+    .rodape ul li {
+        display: inline-block;
+        padding-right: 10px;
+    }
+    .rodape__item {
+        margin: auto;
+
+    }
+
+    .social a{
+        width: 35px;
+        height: 35px;
+        display: block;
+        background-image: url(../imagens/social-icons.png);
+        text-indent: -8000px;
+        color: transparent;
+        float: left;
+        margin-left: 16px;
+    }
+
+    .copyright {
+        float: left;
+        line-height: 35px;
+        padding-top: 15px;
+
+    }
+
+    .social__fb {      
+        background-position: -156px -130px;
+    }
+    .social__fb:hover {      
+        background-position: -156px 0px;
+    }
+
+    .social__tw {
+        background-position: -117px -130px;
+    }
+    .social__tw:hover {
+        background-position: -117px 0px;
+    }
+
+    .social__yt {
+        background-position: -546px -130px;
+    }
+    .social__yt:hover {
+        background-position: -546px 0px;
+    }
+
+    .social__pin {
+        background-position: -858px -460px;
+    }
+    .social__pin:hover {
+        background-position: -858px 0px;
+    }
+
+/*CSS Media Querie (questionário/consulta)*/
+
+@media screen and (min-width: 480px) {
+    #aa {
+        display: none;
+    }
+    #ab {
+        display: none;
+    }
+    .navegacao ul li:hover ul{
+        width: 160px;
+    } 
+    .menu {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .menu__item:nth-last-child(5) {
+        display: block;
+    }
+    .menu__item:nth-last-child(6) {
+        display: block;
+    }
+    #logo {
+        display: none;
+    }
+}
+@media screen and (min-width: 550px) {
+    .navegacao ul li:hover ul{
+        width: 190px;
+    } 
+}
+@media screen and (min-width: 700px) {
+    #ac {
+        display: none;
+    }  
+    .menu {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .menu__item:nth-last-child(4) {
+        display: block;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    #ad {
+        display: none;
+    }
+
+    .navegacao ul ul{
+        padding-bottom: 10px;
+        padding-top: 20px;
+    }
+    header li {
+        float: left;
+    }
+    .menu__item:nth-last-child(3) {
+        display: block;
+    }
+
+    .menu {
+        flex-direction: row;
+        display: flex;
+    }
+
+    main {
+        grid-template-columns: 1fr 150px;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    #ae {
+        display: none;
+    }
+    .navegacao ul li:hover ul{
+        width: 163px;
+    } 
+    header h1 {
+        text-align: left;
+        margin-left: 1em;
+    }
+
+    main {
+        grid-template-columns: 1fr 200px;
+    }
+    .menu__item:nth-last-child(2) {
+        display: block;
+    }
+}
+    
+
+/*CSS Media Type*/
+@media print {
+
+    header nav {
+        display: none;
+    }
+
+    header {
+        min-height: auto;
+    }
+    
+}

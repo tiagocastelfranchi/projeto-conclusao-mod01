@@ -1,0 +1,44 @@
+body {
+    font: 100%/1.7 arial, verdana, sans-serif;
+    padding-left: 10px ;
+    background-color: #E1E4EA
+}
+
+.site {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #E1E4EA
+}
+
+h1{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.opcional {
+    font-style: italic;
+}
+
+input {
+    width: 250px;
+}
+
+.email {
+    font-weight: bolder;
+}
+
+.assunto {
+    width: 250px;
+}
+
+.div-int {
+    border: 1px black  solid;
+    padding: 5px;
+    margin-right: 25%;
+}
+
+.mensagem {
+    background-color: red solid ;
+
+}
